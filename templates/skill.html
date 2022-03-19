@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Найдено со скиллом {{skill}}: {{count}}</h1>
+    {% for person in persons_print_list %}
+        <p><a href="/candidate/{{person.ident}}/">{{person.name}}</a></p>
+    {% endfor %}
+
+    <form action="http://127.0.0.1:5000/">
+        <input type="submit" value="На главную">
+    </form>
+  </body>
+</html>

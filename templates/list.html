@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Все кандидаты</h1>
+    {% for person in person_list %}
+        <p><a href="/candidate/{{person.ident}}/">{{person.name}}</a></p>
+    {% endfor %}
+    <br>
+
+
+
+
+
+  </body>
+</html>
